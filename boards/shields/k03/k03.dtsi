@@ -64,7 +64,7 @@ RC(3,5)  RC(3,4)  RC(3,3)  RC(3,2)  RC(3,1)  RC(3,0)  RC(4,0)    RC(4,6)  RC(3,6
         a-gpios = <&gpio1 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio1 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <24>;
-        status = "disable";
+        status = "disabled";
     };
 
     encoder_L3: encoder_L3 {
@@ -72,7 +72,7 @@ RC(3,5)  RC(3,4)  RC(3,3)  RC(3,2)  RC(3,1)  RC(3,0)  RC(4,0)    RC(4,6)  RC(3,6
         a-gpios = <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <24>;
-        status = "okay";
+        status = "disabled";
     };
 
     encoder_R3: encoder_R3 {
@@ -80,7 +80,7 @@ RC(3,5)  RC(3,4)  RC(3,3)  RC(3,2)  RC(3,1)  RC(3,0)  RC(4,0)    RC(4,6)  RC(3,6
         a-gpios = <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <24>;
-        status = "disabled";
+        status = "okay";
     };
 
     sensors: sensors {
