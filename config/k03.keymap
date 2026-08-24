@@ -13,12 +13,11 @@
             #sensor-binding-cells = <0>;
             bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
         };
-        enc_vscroll: enc_vscroll {
+        MouseScroll: MouseScroll {
             compatible = "zmk,behavior-sensor-rotate";
-            label = "ENC_VSCROLL";
+            label = "MOUSESCROLL";
             #sensor-binding-cells = <0>;
-            tap-ms = <150>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
         };
     };
     keymap {
@@ -34,7 +33,7 @@
             >;
 
             display-name = "Artem";
-            sensor-bindings = <&enc_vscroll>, <&enc_vol>;
+            sensor-bindings = <&MouseScroll>, <&enc_vol>;
         };
 
         nav {
