@@ -16,7 +16,7 @@
         MouseScroll: MouseScroll {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            bindings = <&msc C_AC_SCROLL_DOWN>, <&msc C_AC_SCROLL_UP>;
             label = "MOUSESCROLL";
         };  
     };
