@@ -20,6 +20,20 @@
             tap-ms = <150>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
         };
+        enc_vscroll_N: enc_vscroll_N {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENC_VSCROLL_N";
+            #sensor-binding-cells = <0>;
+            tap-ms = <140>;
+            bindings = <&msc MOVE_Y(15)>, <&msc MOVE_Y(-15)>;
+        };
+        enc_hscroll_N: enc_hscroll_N {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENC_HSCROLL_N";
+            #sensor-binding-cells = <0>;
+            tap-ms = <150>;
+            bindings = <&msc MOVE_X(15)>, <&msc MOVE_X(-15)>;
+        };
     };
     keymap {
         compatible = "zmk,keymap";
@@ -48,6 +62,7 @@ bindings = <
             >;
 
             display-name = "Left";
+            sensor-bindings = <&enc_vscroll_N>, <&enc_hscroll_N>;
         };
 
         sym {
