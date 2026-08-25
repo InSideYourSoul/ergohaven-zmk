@@ -26,9 +26,9 @@
 };
 
 &encoder_L2 {
-    status = "okay";
+    status = "disabled";
 };
 
 &encoder_L3 {
-    status = "okay";
+    status = "disabled";
 };
