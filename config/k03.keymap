@@ -17,8 +17,8 @@
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENC_VSCROLL";
             #sensor-binding-cells = <0>;
-            tap-ms = <140>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            tap-ms = <20>; // <--- Уменьшите время отклика
+            bindings = <&msc MOVE_Y(10)>, <&msc MOVE_Y(-10)>; // <--- Отправляет сразу 10 шагов
         };
 
     };
